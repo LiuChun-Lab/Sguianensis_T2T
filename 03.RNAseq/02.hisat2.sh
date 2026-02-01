@@ -1,0 +1,1 @@
+hisat2 --phred33 --dta -p 20 -x S1979_T2T.genome.fa -1 sampleA.clean_1.fq.gz -2 sampleA.clean_2.fq.gz 2>sampleA.Map2GenomeStat.xls |samtools view -b -S -@ 10 - |samtools sort -@ 10 -o sampleA.hisat2.sort.bam
